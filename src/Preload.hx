@@ -17,7 +17,7 @@ class Preload extends Sprite {
 
         bytesTotal = flash.Lib.current.loaderInfo.bytesTotal;
         if(bytesTotal == 0) {
-            bytesTotal = 3000000;
+            bytesTotal = 3000000;  // A macro could get the size of all the Assets to automatically estimate this
         }
 
         addEventListener(Event.ENTER_FRAME, onEnterFrame);
