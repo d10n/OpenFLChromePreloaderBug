@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project>
+
+    <meta title="ChromePreloader" package="com.example.ChromePreloader" version="0" company="MitchellIntl" />
+    <app main="Main" path="out" file="ChromePreloader" />
+    <window width="1280" height="720" background="#FFFFFF" fps="60" />
+
+    <source path="src" />
+
+    <haxelib name="openfl" />
+
+    <assets path="assets" exclude="openfl.svg" />
+    <icon path="assets/openfl.svg" />
+
+</project>

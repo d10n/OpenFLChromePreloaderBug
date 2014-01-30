@@ -1,0 +1,45 @@
+-main Main
+-cp src
+-swf out/main.swf
+-swf-version 11
+-swf-header 1280:720:60:FFFFFF
+#-dce full
+-D network-sandbox
+#--no-traces
+#--flash-strict
+
+#-D fdb
+#-debug
+
+--next
+
+Main
+-cp src
+-swf out/main.swc
+-D swf-preloader-frame
+-swf-version 11
+-swf-header 1280:720:60:FFFFFF
+#-dce full # bad
+-D network-sandbox
+#--flash-strict
+#--no-traces
+
+#-D fdb
+#-debug
+
+--next
+
+-main Preload
+-cp src
+-swf out/preloaded.swf
+-D flash-use-stage
+-swf-lib out/main.swc
+-swf-version 11
+#-dce full
+-D network-sandbox
+#--flash-strict
+#--no-traces
+
+#-D fdb
+#-debug
+

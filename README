@@ -1,0 +1,9 @@
+Pepper Flash (Chrome' Flash) has a bug where sometimes flash.Lib.current.loaderInfo.bytesTotal is 0.
+This causes OpenFL's preloader to stay stuck.
+This can be worked around without OpenFL.
+
+This bug can be reproduced with this source code.
+`haxe compile.hxml`, and notice that out/preloaded.swf preloads from a remote server as intended on Firefox and Chrome
+`lime build flash`, and notice that out/flash/bin/ChromePreloader.swf will only preload from a remote server and run from Firefox
+You may not be able to reproduce the issue locally without trickle because the flash may load too quickly.
+
